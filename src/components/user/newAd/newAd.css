@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+.new-ad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10px;
+  color: var(--color-text-light-black);
+}
+.new-ad .card {
+  width: 60%;
+  min-height: 120vh;
+  max-height: fit-content;
+  /* background-color: var(--color-bg-light); */
+  border-radius: 5px;
+  /* margin-top: 20px; */
+  padding: 50px;
+}
+.card .card-imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card-imgs .images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  height: fit-content;
+  width: fit-content;
+  border: 1px solid var(--primary-color);
+  background-color: var(--color-text-white);
+}
+.card-imgs .images-x {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  height: fit-content;
+  width: fit-content;
+  border: 1px solid var(--primary-color);
+  background-color: var(--color-text-white);
+}
+.card .wine-info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 1px solid gray;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.card .wine-info .desc {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+}
+
+.desc .input-location {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid gray;
+  outline: gray;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.card .more-info {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.more-info .desc {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+}
+.desc .inputs {
+  padding: 10px;
+  /* margin-left: 20px; */
+  padding-left: 12px;
+  width: 100%;
+  border: 1px solid gray;
+  outline: gray;
+  border-radius: 5px;
+  /* background-color: var(--color-text-white); */
+}
+.css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root.Mui-error
+  .MuiOutlinedInput-notchedOutline {
+  border-color: gray !important;
+}
+.card .btn-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .btnPostAd {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--color-text-white);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.card .btnPostAd:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+.error_div {
+  color: var(--color-bg-error);
+  text-align: center;
+  /* padding-top: 4px;
+  padding-bottom: 4px; */
+}
+.lg_input_div {
+  width: 190px;
+}
+.mui_select {
+  width: 100% !important;
+  font-size: 13px;
+}
+.desc_input_div {
+  width: 40%;
+}
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  font-size: 13px !important;
+}
+.css-1pysi21-MuiFormLabel-root-MuiInputLabel-root {
+  font-size: 13px !important;
+}
+.css-182didf.css-182didf.css-182didf {
+  font-size: 13px !important;
+}
+.css-fvipm8.Mui-focused .MuiOutlinedInput-notchedOutline .css-1in441m {
+  font-size: 13px !important;
+}
+
+@media screen and (max-width: 750px) {
+  .new-ad .card {
+    width: 100%;
+  }
+  .desc {
+    flex-direction: column;
+    width: 100%;
+  }
+  .desc_input_div {
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .desc .inputs {
+    width: 100%;
+  }
+  .card .wine-info .desc {
+    padding-left: 0px;
+  }
+  .desc .input-location {
+    /* margin-left: 45px; */
+    width: 100%;
+  }
+  .more-info .desc {
+    flex-direction: column;
+    padding-left: 0px;
+    width: 100%;
+  }
+}

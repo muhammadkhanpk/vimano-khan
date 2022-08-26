@@ -1,0 +1,32 @@
+.page__numbers {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  padding-left: 70px;
+  padding-bottom: 15px;
+}
+
+.page__numbers li {
+  padding: 5px 5px;
+  cursor: pointer;
+  list-style: none;
+}
+
+li.active {
+  background: var(--primary-color);
+  border-radius: 5px;
+  color: var(--color-text-white);
+}
+
+.page__numbers li button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 650px) {
+  .page__numbers {
+    padding-left: 30px;
+  }
+}

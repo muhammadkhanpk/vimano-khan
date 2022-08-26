@@ -1,0 +1,137 @@
+.chat {
+}
+
+.chat .chat-msgs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.chat-msgs .chat-profile-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+.chat-msgs .chat-profile-msg img {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.chat-msgs .chat-all-msg {
+  padding-top: 20px;
+  margin-top: 20px;
+  overflow-y: scroll;
+  height: 85%;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.sender-user {
+  margin: 5px;
+  padding: 10px;
+  width: fit-content;
+  max-width: 60%;
+  float: right;
+  background-color: rgb(207, 207, 31);
+  border-radius: 15px 15px 0px 15px;
+  transition: 2s ease-in;
+}
+.receiver-user {
+  width: fit-content;
+  max-width: 60%;
+  border-radius: 0px 15px 15px 15px;
+  margin: 5px;
+  padding: 10px;
+  float: left;
+  background-color: rgb(181, 181, 243);
+}
+.chat-msgs .chat-input-menus {
+  width: 60%;
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+}
+.chat-input-menus .chat-input-menus-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.chat-input-menus-inner .chat-input-by-user {
+  width: 80%;
+  position: relative;
+}
+.chat-input-by-user .bs-emoji-icon {
+  color: var(--primary-color);
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.chat-input-menus-inner .chat-user-input {
+  width: 110%;
+  padding: 10px;
+  padding-left: 40px;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  border-radius: 20px;
+  background-color: var(--color-bg-light);
+}
+.chat-input-menus-inner .chat-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 7%;
+}
+.chat-icons .icon1 {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+.chat-icons .clip1 {
+  font-size: 24px;
+  color: var(--primary-color);
+  transform: rotate(45deg);
+}
+@media screen and (max-width: 750px) {
+  .chat {
+    height: 83vh;
+  }
+  .chat .chat-msgs {
+    flex-direction: column;
+  }
+  .chat-msgs .chat-profile-msg {
+    width: 100%;
+  }
+  .chat-msgs .chat-all-msg {
+    height: 90%;
+    width: 100%;
+    margin-top: 0px;
+    padding-bottom: 40px;
+  }
+  .chat .chat-contact {
+    flex: 40%;
+  }
+  .bottom-chat-contact {
+    width: 35%;
+  }
+  .receiver-user {
+    max-width: 75%;
+  }
+  .sender-user {
+    max-width: 75%;
+  }
+  .chat-input-menus-inner .chat-icons {
+    width: 10%;
+  }
+  .chat-input-menus-inner .chat-user-input {
+    padding-left: 25px;
+  }
+  .chat-msgs .chat-input-menus {
+    padding-right: 0px;
+    right: 0px;
+    width: 95%;
+    padding-bottom: 0px;
+  }
+}

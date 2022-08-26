@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.signIn {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: var(--primary-color);
+}
+.signIn .shape_box {
+  flex: 35%;
+  background-color: var(--primary-color);
+  position: relative;
+}
+.signIn .shape_box .logo {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  transform: translate(-10%, -5%);
+}
+.signIn .shape_box .logo img {
+  width: 150px;
+  height: 50px;
+}
+.title-heading {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  transform: translate(-15%, -15%);
+  color: var(--color-text-white);
+  font-size: 25px;
+}
+.signIn .shape_box .large-logo {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-40%, -60%);
+}
+.large-logo img {
+  width: 300px;
+  height: 300px;
+}
+.signIn .shape_form {
+  flex: 65%;
+  background-color: var(--color-bg-white);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signIn .shape_form .login-card {
+  width: 50%;
+}
+.icon-password {
+  position: relative;
+  width: 100%;
+}
+.icon-eye-fill {
+  position: absolute;
+  right: 0;
+  top: 30px;
+  cursor: pointer;
+}
+.icon-eye-fill .icons-eye {
+  font-size: 24px;
+}
+.login-card .input-field {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid rgb(221, 214, 214);
+  margin-top: var(--margin-top);
+  font-size: 15px;
+}
+.login-card .input-field:focus {
+  outline: none;
+}
+.login-card .btn-signIn {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--color-text-white);
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: var(--margin-top);
+}
+.p-signIn {
+  margin-top: var(--margin-top);
+  text-align: justify;
+  padding: 0px 3px;
+}
+.register-link {
+  color: var(--primary-color);
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 5px;
+}
+#error {
+  color: red;
+}
+.error {
+  color: red;
+}
+.forget_password_div {
+  width: 100%;
+}
+.forget_password_span {
+  padding: 10px;
+  float: right;
+  cursor: pointer;
+  font-size: 15px;
+}
+.mobile-v-logo {
+  position: absolute;
+  top: 0;
+  display: none;
+  width: 100%;
+}
+.mobile-v-logo .mobile-logo {
+  background-color: var(--primary-color);
+  padding: 10px;
+
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-v-logo .mobile-logo img {
+  object-fit: contain;
+}
+@media screen and (max-width: 550px) {
+  .mobile-v-logo {
+    display: block;
+  }
+  .m .signIn .shape_box {
+    display: none;
+  }
+  .signIn .shape_form {
+    border-radius: 0px;
+  }
+  .signIn .shape_form .login-card {
+    width: 70% !important;
+  }
+}

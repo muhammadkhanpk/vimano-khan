@@ -1,0 +1,196 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Cuprum:wght@500&family=Poppins:wght@100;200;300&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* position: relative;
+  overflow: auto; */
+}
+.app-container {
+  position: relative;
+  width: 100%;
+  padding-top: 70px;
+  /* padding-bottom: 170px; */
+  overflow: auto;
+  max-height: fit-content;
+  min-height: fit-content;
+}
+
+:root {
+  --primary-color: #800040;
+  --color-bg-white: #ffffff;
+  --color-text-white: #ffffff;
+  --color-text-light-black: #5e5b5b;
+  --color-bg-light: #e9e3e3;
+  --color-bg-error: #fb4b4b;
+  --color-bg-success: #00c63d;
+
+  /* margin */
+  --margin-top: 10px;
+}
+.vimano_container {
+  padding-bottom: 190px;
+}
+.isFormOK {
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: local("brandon"),
+    url("./fonts/brandon/brandon-grotesque-black-58a8a3e824392.otf")
+      format("truetype");
+  font-weight: bold;
+}
+.font-face-brandon {
+  font-family: "Brandon Grotesque";
+}
+.brandon-g-h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+}
+.brandon-g-h3 {
+  font-family: "Brandon Grotesque";
+  font-style: normal;
+  font-weight: 420;
+  font-size: 18px;
+}
+.brandon-g-h4 {
+  font-family: "Brandon Grotesque";
+  font-style: normal;
+  font-weight: 420;
+  font-size: 16px;
+}
+.brandon-g-loc {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: bold;
+}
+.poppins-desc {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  /* font-weight: 300; */
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  margin-top: 2px;
+}
+.show-more {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.PhoneInputInput {
+  margin-right: 5px;
+  padding: 7px;
+  /* border-radius: 5px; */
+  outline: none;
+  border: none;
+}
+.PhoneInput {
+  border: 1px solid;
+  padding: 3px;
+  border-radius: 5px;
+  margin-left: 10px;
+  width: 30%;
+  margin-right: 5px;
+}
+.model-img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+}
+.sp-n {
+  margin-left: 1px;
+}
+.sp-nn {
+  margin-left: 1px;
+}
+.login-with-social {
+  display: flex;
+  justify-content: start;
+}
+.wisky-brand {
+  color: gray;
+  font-size: 17px;
+}
+.icon-xx {
+  font-size: 25px;
+}
+.icon-x {
+  font-size: 23px;
+}
+.img-infox {
+  color: var(--primary-color);
+  align-self: flex-start;
+}
+/* .search-x {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+} */
+.icon-style-x {
+  max-width: 30px;
+  height: 5vh;
+}
+.cell_phone_x {
+  border: 1px solid gray;
+  background-color: #efeff1;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  color: var(--primary-color);
+  text-decoration: none;
+  border-radius: 3px;
+}
+.cell_phone_x:hover {
+  background-color: #e1e1e9;
+}
+.cell_phone_x span {
+  margin-left: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+.my-ads-card {
+  width: 100%;
+}
+.annata {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .icon-x {
+    font-size: 24px;
+  }
+  .icon-xx {
+    font-size: 27px;
+  }
+  .sp-nxx {
+    display: none;
+  }
+  .sp-nx {
+    display: block;
+  }
+  .brandon-g-loc {
+    font-size: 13px;
+  }
+  .show-more {
+    font-size: 13px;
+  }
+  .login-with-social {
+    flex-direction: column;
+  }
+}

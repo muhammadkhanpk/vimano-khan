@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+.my-ads {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  color: var(--color-text-light-black);
+}
+.ads-container {
+  width: 70%;
+  margin-top: 20px;
+}
+.row-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-tabs .tabs-r {
+  padding: 5px;
+  padding-left: 15px;
+  margin: 5px;
+  font-weight: bold;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.row-tabs .tabs-l {
+  padding: 5px;
+  padding-right: 18px;
+  margin: 5px;
+  font-weight: bold;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.row-tabs2 {
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-tabs2 .search-title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+}
+.search-title .icon {
+  position: absolute;
+  left: 5px;
+  font-size: 20px;
+}
+.search-title .field {
+  padding: 10px;
+  padding-left: 25px;
+  outline: none;
+  border-radius: 10px;
+  text-decoration: none;
+  border: none;
+  background-color: var(--color-bg-light);
+}
+.row-tabs2 .status-tabs {
+  display: flex;
+  justify-content: start;
+}
+.status-tabs .navlink {
+  padding: 5px;
+  margin: 10px;
+  text-decoration: none;
+  color: var(--color-text-light-black);
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.status-tabs .navlink:hover {
+  transform: scale(1.1);
+  background-color: var(--primary-color);
+  color: var(--color-text-white);
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 700px) {
+  .ads-container {
+    width: 100%;
+  }
+  .status-tabs .navlink {
+    margin: 2px;
+  }
+}

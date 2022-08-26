@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.signIn {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: var(--primary-color);
+}
+.signIn .shape_box {
+  flex: 35%;
+  background-color: var(--primary-color);
+  position: relative;
+}
+.signIn .shape_box .logo {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  transform: translate(-10%, -5%);
+  cursor: pointer;
+}
+.signIn .shape_box .logo img {
+  width: 150px;
+  height: 50px;
+}
+.title-heading {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  transform: translate(-15%, -15%);
+  color: var(--color-text-white);
+  font-size: 25px;
+}
+.signIn .shape_box .large-logo {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-40%, -60%);
+}
+.large-logo img {
+  width: 300px;
+  height: 300px;
+}
+.signIn .shape_form {
+  flex: 65%;
+  background-color: var(--color-bg-white);
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signIn .shape_form .login-card {
+  width: 50%;
+}
+.signupwithgoogle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background-color: white;
+  border: 1px solid rgb(209, 204, 204);
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  margin-right: 1%;
+  cursor: pointer;
+}
+.x {
+  margin-right: 0%;
+}
+.signupwithgoogle button {
+  padding: 10px;
+  background-color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.google-icon {
+  font-size: 24px;
+}
+.fb {
+  background-color: rgb(71, 110, 236);
+  color: white;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  padding: 3px;
+}
+.icon-password {
+  position: relative;
+  width: 100%;
+}
+.icon-eye-fill {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  cursor: pointer;
+}
+.icon-eye-fill .icons-eye {
+  font-size: 24px;
+}
+.login-card .input-field {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid rgb(221, 214, 214);
+  margin-top: var(--margin-top);
+  font-size: 15px;
+}
+.login-card .input-field:focus {
+  outline: none;
+}
+.login-card .btn-signIn {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--color-text-white);
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: var(--margin-top);
+}
+.p-signUp {
+  margin-top: var(--margin-top);
+}
+.register-link {
+  color: var(--primary-color);
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.create-account {
+  margin-left: 25%;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 550px) {
+  .signIn .shape_box {
+    display: none;
+  }
+  .signIn .shape_form {
+    border-radius: 0px;
+  }
+  .signupwithgoogle {
+    width: 100%;
+    margin: 5px;
+    padding-left: 5px;
+    justify-content: start;
+  }
+  .create-account {
+    margin-left: 10%;
+  }
+  .login-card .input-field {
+    height: 35px;
+  }
+}
