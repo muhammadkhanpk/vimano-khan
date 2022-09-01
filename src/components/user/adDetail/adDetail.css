@@ -171,12 +171,17 @@
   .ad-detail .ad-menus {
     margin-right: 2px;
   } */
+  .ad-detail {
+    margin-bottom: 10px;
+  }
   .ad-menus .price-card {
     position: absolute;
     top: 80px;
     width: 96%;
+    height: 120px;
+    overflow-x: hidden;
   }
   .ad-detail .ad-img {
-    margin-top: 95px !important;
+    margin-top: 120px !important;
   }
 }
