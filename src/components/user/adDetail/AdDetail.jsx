@@ -15,7 +15,7 @@ import { ref, get, update, remove, child } from "firebase/database";
 import useGetFavoriteUserWine from "../../../hooks/useGetFavoriteUserWine";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import moment from "moment";
 
 function AdDetail() {
@@ -92,6 +92,9 @@ function AdDetail() {
       return cellNo;
     }
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <UserTopbar />
